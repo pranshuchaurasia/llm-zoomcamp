@@ -1,2 +1,2 @@
 # llm-zoomcamp
-Datatalks Clun LLM Zoomcamp
+Datatalks Club LLM Zoomcamp
