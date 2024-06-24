@@ -19,6 +19,7 @@ To set up the project environment, follow these steps:
    ```
    pip install -r requirements.txt
    ```
+4. Create a `.env` file in the root directory with necessary configurations (API keys, environment settings, etc.). See the Environment Variables section below for details.
 
 ## Usage
 Navigate to the `01-intro` directory to start with the introductory lessons:
@@ -27,7 +28,21 @@ Navigate to the `01-intro` directory to start with the introductory lessons:
 cd 01-intro
 ```
 
-Here, you can find Jupyter notebooks that you can run to see examples of RAG in action.
+Here, you can find Jupyter notebooks that you can run to see examples of large language models in action.
+
+## File Documentation
+### `01-intro` Directory
+- **OpenAI_Practice.ipynb**: Demonstrations of OpenAI model interactions.
+- **documents.json**: Data used in the notebooks for loading and manipulation.
+- **minsearch.py**: Python script for a minimal search algorithm demonstration.
+- **parse-faq.ipynb**: Techniques for parsing FAQs and extracting information.
+- **rag-intro.ipynb**: Introduction to Retrieval-Augmented Generation.
+
+## Environment Variables
+To run the project, you need to set up environment variables that the application can use:
+1. Create a `.env` file in the project root directory.
+2. Add variables like `API_KEY="your_api_key_here"`.
+3. Ensure the application reads these variables at runtime.
 
 ## Contributing
 Contributions are welcome! If you have improvements or corrections to propose, please fork the repository and submit a pull request.
