@@ -41,7 +41,7 @@ Here, you can find Jupyter notebooks that you can run to see examples of large l
 ## Environment Variables
 To run the project, you need to set up environment variables that the application can use:
 1. Create a `.env` file in the project root directory.
-2. Add variables like `API_KEY="your_api_key_here"`.
+2. Add variables like `OPENAI_API_KEY="your_api_key_here"`.
 3. Ensure the application reads these variables at runtime.
 
 ## Contributing
