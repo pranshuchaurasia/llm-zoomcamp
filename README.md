@@ -15,11 +15,28 @@ To set up the project environment, follow these steps:
    ```
    cd llm-zoomcamp
    ```
-3. Install the required Python packages:
+3. Create and activate a virtual environment:
+   ```bash
+   python -m venv llm-zoomcamp
+   .\llm-zoomcamp\Scripts\Activate.ps1  # On Windows
+   source llm-zoomcamp/bin/activate  # On Unix or MacOS
+   ```
+4. Install the required Python packages:
    ```
    pip install -r requirements.txt
    ```
-4. Create a `.env` file in the root directory with necessary configurations (API keys, environment settings, etc.). See the Environment Variables section below for details.
+5. Create a `.env` file in the root directory with necessary configurations (API keys, environment settings, etc.). See the Environment Variables section below for details.
+
+## Using Docker
+To containerize the application, ensure you have Docker installed. Then follow these steps:
+1. Build the Docker image:
+   ```
+   docker build -t llm-zoomcamp .
+   ```
+2. Run the Docker container:
+   ```
+   docker run -p 4000:80 llm-zoomcamp
+   ```
 
 ## Usage
 Navigate to the `01-intro` directory to start with the introductory lessons:
@@ -41,7 +58,7 @@ Here, you can find Jupyter notebooks that you can run to see examples of large l
 ## Environment Variables
 To run the project, you need to set up environment variables that the application can use:
 1. Create a `.env` file in the project root directory.
-2. Add variables like `OPENAI_API_KEY="your_api_key_here"`.
+2. Add variables like `API_KEY="your_api_key_here"`.
 3. Ensure the application reads these variables at runtime.
 
 ## Contributing
