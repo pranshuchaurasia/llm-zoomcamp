@@ -27,16 +27,6 @@ To set up the project environment, follow these steps:
    ```
 5. Create a `.env` file in the root directory with necessary configurations (API keys, environment settings, etc.). See the Environment Variables section below for details.
 
-## Using Docker
-To containerize the application, ensure you have Docker installed. Then follow these steps:
-1. Build the Docker image:
-   ```
-   docker build -t llm-zoomcamp .
-   ```
-2. Run the Docker container:
-   ```
-   docker run -p 4000:80 llm-zoomcamp
-   ```
 
 ## Usage
 Navigate to the `01-intro` directory to start with the introductory lessons:
